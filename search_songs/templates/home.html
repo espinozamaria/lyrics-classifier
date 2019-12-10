@@ -1,0 +1,16 @@
+<h1>HomePage</h1>
+
+<form method="get">
+    <input name="q" type="text" placeholder="Search...">
+</form>
+
+<h2>Search Results</h2>
+<ul>
+    {% for song in object_list %}
+      <li>
+        <!-- <a name="post_id" href="{% url 'search_results' post_id=song.track.track_id %}"> -->
+        <a href="{% url 'search_results' pk=song.track.track_id %} ">
+        {{ song.track.track_id }}, {{ song.track.track_name }}
+      </li>
+    {% endfor %}
+</ul>

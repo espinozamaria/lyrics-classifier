@@ -1,0 +1,20 @@
+body {
+    color: orange;
+}
+
+.heading {
+    text-align: center;
+}
+
+.button-spacing {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.no-show {
+    display: none;
+}
+
+.show {
+    display: block;
+}

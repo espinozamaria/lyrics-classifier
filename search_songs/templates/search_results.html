@@ -1,0 +1,10 @@
+<h1>Search Results</h1>
+
+<ul>
+  {% for song in lyrics_deets %}
+    <li>
+      <!-- {{ song.name }}, {{ song.state }} -->
+      {{ song.lyrics }}
+    </li>
+  {% endfor %}
+</ul>
